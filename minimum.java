@@ -2,13 +2,13 @@ package online_class;
 import java.util.*;
 
 class Minimum{
-public static int minimum (int x,int y)
+public static int minimum (int a,int b)
 {
-	if(x>y)
+	if(a>b)
 	{
-		return (y);
+		return b;
 	} else
-	return (x);
+	return a;
 }
  public static void main(String[] args) {
  	int res = minimum(175,957);
