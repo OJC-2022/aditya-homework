@@ -2,16 +2,10 @@ package online_class;
 import java.util.*;
 
 public class Fibonacci {
-
-	public static void main(String[] args) {
-		// TODO Auto-generated method stub
-		Scanner sc=new Scanner(System.in);
+	public void fib(int n) {
 		int ans=0;
 		int a=0;
 		int b=1;
-		int n;
-		System.out.println("enter no of terms");
-		n=sc.nextInt();
 		System.out.print(a+" ");
 		System.out.print(b+" ");
 		for(int i=0;i<n-2;i++) {
@@ -19,8 +13,19 @@ public class Fibonacci {
 			System.out.print(ans+" ");
 			a=b;
 			b=ans;
+	}
+	}
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Fibonacci ab=new Fibonacci();
+		Scanner sc=new Scanner(System.in);
+		
+		int n;
+		System.out.println("enter no of terms");
+		n=sc.nextInt();
+		ab.fib(n);
 		}
 
 	}
 
-}
+
